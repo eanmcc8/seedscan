@@ -198,7 +198,7 @@ def check_btc_balance(address):
         response = requests.get(BTC_API_URL + address)
         data = response.json()
         balance_satoshis = data.get(address, {}).get('final_balance', 0)
-                return balance_satoshis / 1e8
+        return balance_satoshis / 1e8
     except Exception as e:
         logging.error(f"BTC balance fetch error for {address}: {e}")
         return 0
