@@ -1,0 +1,7 @@
+web3
+mnemonic
+bitcoinlib
+requests
+tqdm
+pynacl
+solana
