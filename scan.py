@@ -12,11 +12,6 @@ except ImportError:
     print("Please install bitcoinlib: pip install bitcoinlib")
     exit(1)
 try:
-    from nacl.signing import SigningKey
-except ImportError:
-    pass  # Not used directly in current code
-# Optional: For Solana
-try:
     from solana.rpc.api import Client as SolanaClient
     from solana.keypair import Keypair
 except ImportError:
